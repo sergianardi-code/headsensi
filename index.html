@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HeadSensi - Hubungi & Ikuti Kami</title>
+<meta name="description" content="Saluran WhatsApp, TikTok, dan chat admin HeadSensi.">
+<style>
+:root{
+  --bg:#EEF3EC; --ink:#17251C; --muted:#5B6B60; --card:#FFFFFF; --line:#D5DFD2;
+  --wa:#1FA855; --tt:#111418; --adm:#F2B531;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0F1A13;--ink:#EAF2EC;--muted:#97A89C;--card:#17251C;--line:#26382C;--tt:#EAF2EC}
+}
+:root[data-theme="dark"]{--bg:#0F1A13;--ink:#EAF2EC;--muted:#97A89C;--card:#17251C;--line:#26382C;--tt:#EAF2EC}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;min-height:100vh;display:flex;justify-content:center;padding:28px 18px 40px}
+main{width:100%;max-width:440px}
+.head{text-align:center;margin-bottom:26px;animation:in .5s ease both}
+.avatar{position:relative;overflow:hidden;width:96px;height:96px;border-radius:50%;margin:0 auto 14px;background:var(--wa);color:#fff;display:grid;place-items:center;font-size:38px;font-weight:800;box-shadow:0 0 0 5px var(--bg),0 0 0 7px var(--wa)}
+.avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+h1{font-size:22px;font-weight:800;letter-spacing:-.01em}
+.head p{color:var(--muted);font-size:14.5px;margin-top:6px;line-height:1.5}
+.links{display:flex;flex-direction:column;gap:12px}
+.link{display:flex;align-items:center;gap:14px;padding:14px 16px;background:var(--card);border:1.5px solid var(--line);border-radius:18px;text-decoration:none;color:var(--ink);transition:transform .15s,border-color .15s}
+.link:hover{border-color:var(--c);transform:translateY(-2px)}
+.link:active{transform:scale(.98)}
+.link:focus-visible{outline:3px solid var(--c);outline-offset:3px}
+.ic{flex:none;width:48px;height:48px;border-radius:14px;background:var(--c);display:grid;place-items:center;color:#fff}
+.ic svg{width:26px;height:26px;fill:currentColor}
+.txt{flex:1;min-width:0}
+.txt b{display:block;font-size:16px;font-weight:700}
+.txt span{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+.go{flex:none;font-size:13px;font-weight:700;color:var(--c);padding:7px 12px;border-radius:999px;border:1.5px solid var(--c)}
+.wa{--c:var(--wa)} .tt{--c:var(--tt)} .adm{--c:var(--adm)}
+.adm .ic{color:#3a2a00}
+.tt .ic{color:var(--bg)}
+.note{text-align:center;color:var(--muted);font-size:12.5px;margin-top:26px}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+  <header class="head">
+    <div class="avatar"><span aria-hidden="true">H</span><img src="logo.jpg" alt="Logo HeadSensi" onerror="this.remove()"></div>
+    <h1>HeadSensi</h1>
+    <p>Pilih cara terbaik untuk terhubung dengan kami.</p>
+  </header>
+
+  <nav class="links" aria-label="Tautan">
+    <a class="link wa" href="https://whatsapp.com/channel/0029VbBBqbW9Gv7YjJTiLh1o" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.2c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.4.1.1.1.7-.1 1.3Z"/></svg></span>
+      <span class="txt"><b>Saluran WhatsApp</b><span>Info terbaru & promo langsung di HP</span></span>
+      <span class="go">Gabung</span>
+    </a>
+
+    <a class="link tt" href="https://www.tiktok.com/@egixsensi" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 24 24"><path d="M16.6 2h-3.2v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .8.1V9.3a6.1 6.1 0 1 0 5.3 6.1V8.6a7.3 7.3 0 0 0 4.2 1.3V6.7A4.3 4.3 0 0 1 16.6 2Z"/></svg></span>
+      <span class="txt"><b>TikTok</b><span>Tonton video dan konten terbaru</span></span>
+      <span class="go">Ikuti</span>
+    </a>
+
+    <a class="link adm" href="https://wa.me/6283117106814?text=Halo%20Admin%2C%20saya%20mau%20tanya" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1Z"/></svg></span>
+      <span class="txt"><b>Chat admin</b><span>0831-1710-6814 · balas jam 08.00–21.00</span></span>
+      <span class="go">Chat</span>
+    </a>
+  </nav>
+
+  <p class="note">Ketuk salah satu untuk membuka.</p>
+</main>
+</body>
+</html>
